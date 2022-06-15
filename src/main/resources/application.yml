@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-graphql
+  graphql:
+    websocket:
+      path: /graphql
+  jpa:
+    hibernate:
+      ddl-auto: create
+logging:
+  level:
+    reactor:
+      netty: debug
+    org:
+      springframework:
+        graphql: debug
+        http: debug
